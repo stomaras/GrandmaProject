@@ -19,6 +19,8 @@
 
 <body>
 
+  <!--Pictures in https://www.pexels.com-->
+  <!--Pictues in https://coolors.com-->
   <!-- icons -->
   <!-- 
     https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
@@ -41,7 +43,80 @@
     https://www.iconfinder.com/bluelabelicons
          -->
   <!--end of icons icons -->
+  <header id="header">
+    <!-- Here we say in what screen we want the navbar to collapse
+         So in what screen we have the links disapearing 
+         px-4 means that there is a padding on left and right in the navbar
+    -->
+    <nav class="navbar navbar-expand-lg px-4">
+      <!--
+    https://www.iconfinder.com/icons/2427887/dessert_donut_doughnut_fat_sweets_icon
+    Creative Commons (Attribution 3.0 Unported);
+    https://www.iconfinder.com/korawan_m
+      -->
+    <a href="#" class="navbar-brand">
+      <img src="img/logo.svg" alt="main icon">
+    </a>
 
+    <!-- navbar-toogler basically allows us to click the button and the links will be show 
+         after data-toggle we have data-target which will be target the div which i will create later on
+    -->
+    <button type="button" class="navbar-toogler" data-toggle="collapse" data-target="#myNavbar">
+      <span class="toogler-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+    </button>
+    <!-- This div will contain my links
+         mx-auto in the bigger screen we want links to be in the middle 
+         when placing mx-auto it makes sure that this margin always can be in the middle 
+         so with mx-auto basically i say margin on the left and right for all links
+         active class will make sure as we hovering we get dark color
+         nav-item will be for the list item and nav-link class will be for the link in the list item.
+    -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav text-capitalize mx-auto">
+        <li class="nav-item active">
+          <a href="#header" class="nav-link">home</a>
+        </li>
+        <li class="nav-item active">
+          <a href="#about" class="nav-link">about</a>
+        </li>
+        <li class="nav-item active">
+          <a href="#store" class="nav-link">store</a>
+        </li>
+        <li class="nav-item active">
+          <a href="#services" class="nav-link">services</a>
+        </li>
+        <li class="nav-item active">
+          <a href="#cakes" class="nav-link">order</a>
+        </li>
+      </ul>
+      <!-- d-none will hide and the d-lg-flex display that will appear when go to larger size-->
+      <div class="nav-info-items d-none d-lg-flex">
+        <!-- single info -->
+        <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+          <span class="info-icon mx-lg-3">
+            <i class="fa fas-phone"></i>
+          </span>
+          <p class="mb-0">+ 123 456 7890</p>
+        </div>
+        <!-- single info -->
+        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+          <span class="cart-info__icon mr-lg-3">
+            <i class="fas fa-shopping-cart"></i>
+            <p class="mb 0 text-capitalize">
+              <span id="item-count">2</span>
+              item - $
+              <span class="item-total">
+                10.89
+              </span>
+            </p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  </header>
 
 
   <!-- jquery -->
